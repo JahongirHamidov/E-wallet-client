@@ -12,7 +12,7 @@ export const TransactionList = () => {
             <h3>History</h3>
             <ul className="list">
                 {transactions.map(transaction=>(
-                   <Transaction key={transaction.id} amount={transaction.amount} text={transaction.text} />
+                   <Transaction key={transaction.id} id={transaction.id} amount={transaction.amount} text={transaction.text} />
                 ))}
             </ul>
         </>
